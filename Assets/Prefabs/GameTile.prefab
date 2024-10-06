@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoxSprite: {fileID: 8944091924167743474}
   TileType: 0
+  Card: {fileID: 0}
 --- !u!61 &1981940751310244600
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,19 +1,16 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DiceRoll : MonoBehaviour
 {
     //Variables to make the dice Movement
     public int oneD6;
     public bool DiceRolled;
+
+    public Text playerRoll;
+
    
-    
-    int i = -1; // the int i is just a index pointer to find the players
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
+    public int i = -1;
     // Function to make the dice roll
     public void RollDice()
     {
@@ -26,10 +23,21 @@ public class DiceRoll : MonoBehaviour
         {
             i = 0;
         }
-
-        // Run a randomizer from 1 to 6 and then add the roll to the players movement
-        oneD6 = UnityEngine.Random.Range(1, 7);
+        oneD6 = Random.Range(1, 7);
+        playerRoll.text = oneD6.ToString();
         PlayerMovement.players[i].PlayerMove();
         //print(oneD6);
+    }
+    public void GetRandomPlayerToGoBack()
+    {
+        int x = Random.Range(1, 5);
+        if (i != x)
+        {
+            PlayerMovement.players[x].PlayerMoveBack();
+        }
+        else
+        {
+            GetRandomPlayerToGoBack();
+        }
     }
 }

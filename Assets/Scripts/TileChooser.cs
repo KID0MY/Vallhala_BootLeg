@@ -12,6 +12,9 @@ public class TileChooser : MonoBehaviour
     }
     public SpriteRenderer BoxSprite;
     public tilesType TileType = tilesType.Normal;
+
+    public GameObject Card;
+    public GameObject PlayButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +31,18 @@ public class TileChooser : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && TileType == tilesType.Card)
         {
+            print("fui");
             Cards();
+            PlayButton.SetActive(false);
         }
     }
 
     void Cards()
     {
+        Card.SetActive(true);
     }
 }
