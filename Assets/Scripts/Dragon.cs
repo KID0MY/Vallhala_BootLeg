@@ -35,7 +35,7 @@ public class Dragon : MonoBehaviour
     public void takeDamage(int damage)
     {
         dragonHealth -= damage;
-
+        FindObjectOfType<AudioManager>().Play("DragonHit");
         healthBar.setHealth(dragonHealth);
     }
     public int getHealth()

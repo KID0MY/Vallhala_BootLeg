@@ -49,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
     //Player Movement(transform its position and add the ammount of tiles to the variable) when button is pressed
     public void PlayerMove()
     {
+        FindObjectOfType<AudioManager>().Play("PlayerMovement");
         transform.position += Vector3.right * script.oneD6;
         playersTile += script.oneD6;
         //print("PlayerTiles: "+ playersTile);
@@ -56,8 +57,25 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlayerMoveBack()
     {
-        transform.position -= Vector3.right * 3;
-        playersTile -= 3;
+        int PmoveBack;
+        if (playersTile >= 4)
+        {
+            PmoveBack = 3;
+        }
+        else
+        {
+            if (playersTile == 0)
+            {
+                PmoveBack = 0;
+            }
+            else
+            {
+                PmoveBack = playersTile;
+            }
+        }
+        FindObjectOfType<AudioManager>().Play("PlayerMovement");
+        transform.position -= Vector3.right * PmoveBack;
+        playersTile -= PmoveBack;
     }
 
     public void CardEffects(int i)
@@ -72,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
             case 2:
                 //You found tresure box with coins! gain 5 points
                 PlayerPoints += 5;
+                FindObjectOfType<AudioManager>().Play("Coins");
                 PlayerPointsDisplay.text = PlayerPoints.ToString();
                 break;
             case 3:

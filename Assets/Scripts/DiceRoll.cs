@@ -30,7 +30,7 @@ public class DiceRoll : MonoBehaviour
     }
     public void GetRandomPlayerToGoBack()
     {
-        int x = Random.Range(1, 5);
+        int x = Random.Range(1, 4);
         if (i != x)
         {
             PlayerMovement.players[x].PlayerMoveBack();
