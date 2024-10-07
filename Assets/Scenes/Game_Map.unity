@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 103072054}
   - component: {fileID: 103072058}
   m_Layer: 0
-  m_Name: Player_4
+  m_Name: Player_1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -401,7 +401,7 @@ MonoBehaviour:
   dragon: {fileID: 640151088}
   playersTile: 0
   PlayerPoints: 0
-  PlayerPointsDisplay: {fileID: 726372182}
+  PlayerPointsDisplay: {fileID: 1273072140}
 --- !u!212 &103072056
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -461,11 +461,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103072053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: -3.5, z: -1}
+  m_LocalPosition: {x: -7.5, y: 2.5, z: -1}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &103072058
 Rigidbody2D:
@@ -671,7 +671,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e7a309642301c9943854afe1011289ad, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a2b2eda5615765c40ba2449f6c6b6ff1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -891,6 +891,10 @@ PrefabInstance:
       propertyPath: Card
       value: 
       objectReference: {fileID: 1884116428}
+    - target: {fileID: 1860787592804946997, guid: 14b6336902ce4934598bb300d7b38b38, type: 3}
+      propertyPath: TileType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1860787592804946997, guid: 14b6336902ce4934598bb300d7b38b38, type: 3}
       propertyPath: PlayButton
       value: 
@@ -1864,7 +1868,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3337038689812066966, guid: 6e5776c2b35c1b1438f3ae8c3550a173, type: 3}
+  m_Sprite: {fileID: -6316388339716599014, guid: 07f18483d08a1d44abc475dbb39972ee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2111,7 +2115,7 @@ PrefabInstance:
       objectReference: {fileID: 1884116428}
     - target: {fileID: 1860787592804946997, guid: 14b6336902ce4934598bb300d7b38b38, type: 3}
       propertyPath: TileType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1860787592804946997, guid: 14b6336902ce4934598bb300d7b38b38, type: 3}
       propertyPath: PlayButton
@@ -2460,7 +2464,7 @@ GameObject:
   - component: {fileID: 1112484345}
   - component: {fileID: 1112484346}
   m_Layer: 0
-  m_Name: Player_1
+  m_Name: Player_2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2482,7 +2486,7 @@ MonoBehaviour:
   dragon: {fileID: 640151088}
   playersTile: 0
   PlayerPoints: 0
-  PlayerPointsDisplay: {fileID: 1273072140}
+  PlayerPointsDisplay: {fileID: 1937050341}
 --- !u!212 &1112484343
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2542,11 +2546,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112484341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: 2.5, z: -1}
+  m_LocalPosition: {x: -7.5, y: 0.5, z: -1}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1112484345
 BoxCollider2D:
@@ -3013,6 +3017,7 @@ GameObject:
   - component: {fileID: 1351790110}
   - component: {fileID: 1351790109}
   - component: {fileID: 1351790111}
+  - component: {fileID: 1351790112}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -3181,6 +3186,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1351790112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351790108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1c9a117bde4b94a80e4cb81802bde3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1398167721
 GameObject:
   m_ObjectHideFlags: 0
@@ -4205,9 +4222,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2061634808}
     m_Modifications:
+    - target: {fileID: 497454859248256351, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229495031314002837, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229495031314002837, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229495031314002837, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229495031314002837, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4300958352872796400, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
       propertyPath: m_Name
       value: CardOption
+      objectReference: {fileID: 0}
+    - target: {fileID: 4300958352872796400, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5143160597671456519, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
       propertyPath: m_Pivot.x
@@ -4301,6 +4342,22 @@ PrefabInstance:
       propertyPath: PlayButton
       value: 
       objectReference: {fileID: 1398167721}
+    - target: {fileID: 6818221103795452704, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818221103795452704, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818221103795452704, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818221103795452704, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1696b6efc9ed1b4da75634aeda18bc8, type: 3}
 --- !u!1001 &1782985316
@@ -4616,7 +4673,7 @@ GameObject:
   - component: {fileID: 1880208221}
   - component: {fileID: 1880208225}
   m_Layer: 0
-  m_Name: Player_2
+  m_Name: Player_4
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4664,7 +4721,7 @@ MonoBehaviour:
   dragon: {fileID: 640151088}
   playersTile: 0
   PlayerPoints: 0
-  PlayerPointsDisplay: {fileID: 1937050341}
+  PlayerPointsDisplay: {fileID: 726372182}
 --- !u!212 &1880208223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4724,11 +4781,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880208220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5, y: 0.5, z: -1}
+  m_LocalPosition: {x: -7.5, y: -3.5, z: -1}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1880208225
 Rigidbody2D:

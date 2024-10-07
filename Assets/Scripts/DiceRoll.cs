@@ -8,7 +8,6 @@ public class DiceRoll : MonoBehaviour
     public bool DiceRolled;
 
     public Text playerRoll;
-
    
     public int i = -1;
     // Function to make the dice roll

@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Game_Map.unity
+    guid: 1967057cd0e1e5b43a1b7c41b89d70ca
+  - enabled: 1
+    path: Assets/Scenes/VictoryScreen.unity
+    guid: b247de306c2d93c4eac29a3e512b2d76
   m_configObjects: {}
