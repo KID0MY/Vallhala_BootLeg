@@ -56,7 +56,7 @@ public class CardChooser : MonoBehaviour
                 cardImage.sprite = _wealth;
                 break;
             case "PrayGods":
-                cardtext.text = "You pray for the gods, choose player to go back 3 spaces.";
+                cardtext.text = "You pray for the gods, A player will be chosen by Odin to go back 3 spaces.";
                 cardImage.sprite = _god;
                 break;
             case "BearEncounter":

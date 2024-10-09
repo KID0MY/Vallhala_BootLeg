@@ -82,7 +82,7 @@ public class Dragon : MonoBehaviour
         {
             // Handle victory conditions (e.g., load a victory screen)
             Debug.Log("Player " + winner + "is the mightiest viking, with" + PlayerMovement.players[winner].PlayerPoints);
-            PlayerWinner = "Player " + winner + " is the mightiest viking, with " + PlayerMovement.players[winner].PlayerPoints + " Points";
+            PlayerWinner = "Player " + winner + " is the mightiest viking!";
             SceneManager.LoadScene("VictoryScreen");
         }
     }

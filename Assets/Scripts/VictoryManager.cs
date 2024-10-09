@@ -20,6 +20,7 @@ public class VictoryManager : MonoBehaviour
 
     public void restartGame()
     {
-        SceneManager.LoadScene("Game_map");
+        Application.Quit();
+        //SceneManager.LoadScene("Game_map");
     }
 }
